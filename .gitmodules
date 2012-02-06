@@ -1,0 +1,6 @@
+[submodule "jscocoa"]
+	path = jscocoa
+	url = git@github.com:hiphoox/jscocoa.git
+[submodule "CocoaHTTPServer"]
+	path = CocoaHTTPServer
+	url = git@github.com:hiphoox/CocoaHTTPServer.git
