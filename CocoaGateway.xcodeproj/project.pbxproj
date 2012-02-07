@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8024005F14E0BFA200D70E73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8024005E14E0BFA200D70E73 /* CoreGraphics.framework */; };
+		805AEE5214E0AD80006C9354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AEE5114E0AD80006C9354 /* Foundation.framework */; };
+		805AEE5814E0AD80006C9354 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE5614E0AD80006C9354 /* InfoPlist.strings */; };
+		805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6314E0B123006C9354 /* BridgeSupportController.h */; settings = {ATTRIBUTES = (); }; };
+		805AEE9514E0B124006C9354 /* BridgeSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6414E0B123006C9354 /* BridgeSupportController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEE9914E0B124006C9354 /* BurksPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6A14E0B123006C9354 /* BurksPool.h */; };
+		805AEE9A14E0B124006C9354 /* BurksPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6B14E0B123006C9354 /* BurksPool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEE9B14E0B124006C9354 /* GDataDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6C14E0B123006C9354 /* GDataDefines.h */; };
+		805AEE9C14E0B124006C9354 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6D14E0B123006C9354 /* GDataXMLNode.h */; };
+		805AEE9D14E0B124006C9354 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6E14E0B123006C9354 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEE9F14E0B124006C9354 /* ffi-iphone.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7114E0B123006C9354 /* ffi-iphone.c */; };
+		805AEEA014E0B124006C9354 /* ffi-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7214E0B123006C9354 /* ffi-iphone.h */; };
+		805AEEA114E0B124006C9354 /* ffi-iphonesimulator.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7314E0B123006C9354 /* ffi-iphonesimulator.c */; };
+		805AEEA214E0B124006C9354 /* ffi-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7414E0B123006C9354 /* ffi-iphonesimulator.h */; };
+		805AEEA314E0B124006C9354 /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7514E0B123006C9354 /* ffi.h */; };
+		805AEEA414E0B124006C9354 /* ffi_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7614E0B123006C9354 /* ffi_common.h */; };
+		805AEEA514E0B124006C9354 /* fficonfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7714E0B123006C9354 /* fficonfig.h */; };
+		805AEEA614E0B124006C9354 /* ffitarget-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7814E0B123006C9354 /* ffitarget-iphone.h */; };
+		805AEEA714E0B124006C9354 /* ffitarget-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7914E0B123006C9354 /* ffitarget-iphonesimulator.h */; };
+		805AEEA814E0B124006C9354 /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7A14E0B123006C9354 /* ffitarget.h */; };
+		805AEEA914E0B124006C9354 /* iphone-sysv.S in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7B14E0B123006C9354 /* iphone-sysv.S */; };
+		805AEEAA14E0B124006C9354 /* iphonesimulator-darwin.S in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7C14E0B123006C9354 /* iphonesimulator-darwin.S */; };
+		805AEEAC14E0B124006C9354 /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7E14E0B123006C9354 /* prep_cif.c */; };
+		805AEEAD14E0B124006C9354 /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7F14E0B123006C9354 /* raw_api.c */; };
+		805AEEAE14E0B124006C9354 /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8014E0B123006C9354 /* types.c */; };
+		805AEEB114E0B124006C9354 /* JSCocoaController.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8614E0B123006C9354 /* JSCocoaController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEB214E0B124006C9354 /* JSCocoaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8714E0B123006C9354 /* JSCocoaController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEEB314E0B124006C9354 /* JSCocoaFFIArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8814E0B123006C9354 /* JSCocoaFFIArgument.h */; };
+		805AEEB414E0B124006C9354 /* JSCocoaFFIArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8914E0B123006C9354 /* JSCocoaFFIArgument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEEB514E0B124006C9354 /* JSCocoaFFIClosure.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8A14E0B123006C9354 /* JSCocoaFFIClosure.h */; };
+		805AEEB614E0B124006C9354 /* JSCocoaFFIClosure.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8B14E0B123006C9354 /* JSCocoaFFIClosure.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEEB714E0B124006C9354 /* JSCocoaLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8C14E0B123006C9354 /* JSCocoaLib.h */; };
+		805AEEB814E0B124006C9354 /* JSCocoaLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8D14E0B123006C9354 /* JSCocoaLib.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEEB914E0B124006C9354 /* JSCocoaPrivateObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8E14E0B123006C9354 /* JSCocoaPrivateObject.h */; };
+		805AEEBA14E0B124006C9354 /* JSCocoaPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8F14E0B123006C9354 /* JSCocoaPrivateObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEED714E0B644006C9354 /* JavascriptCore-dlsym.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEECE14E0B644006C9354 /* JavascriptCore-dlsym.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEED814E0B644006C9354 /* JavascriptCore-dlsym.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEECF14E0B644006C9354 /* JavascriptCore-dlsym.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		805AEED914E0B644006C9354 /* JavaScriptCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED014E0B644006C9354 /* JavaScriptCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDA14E0B644006C9354 /* JSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED114E0B644006C9354 /* JSBase.h */; };
+		805AEEDB14E0B644006C9354 /* JSContextRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED214E0B644006C9354 /* JSContextRef.h */; };
+		805AEEDC14E0B644006C9354 /* JSObjectRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED314E0B644006C9354 /* JSObjectRef.h */; };
+		805AEEDD14E0B644006C9354 /* JSStringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED414E0B644006C9354 /* JSStringRef.h */; };
+		805AEEDE14E0B644006C9354 /* JSStringRefCF.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED514E0B644006C9354 /* JSStringRefCF.h */; };
+		805AEEDF14E0B644006C9354 /* JSValueRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED614E0B644006C9354 /* JSValueRef.h */; };
+		805AEEE014E0B8A0006C9354 /* class.js in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE6514E0B123006C9354 /* class.js */; };
+		805AEEE114E0B8A0006C9354 /* jslint-jscocoa.js in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE9014E0B123006C9354 /* jslint-jscocoa.js */; };
+		805AEEE514E0BA3B006C9354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AEEE414E0BA3B006C9354 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8024005E14E0BFA200D70E73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		805AEE4E14E0AD80006C9354 /* CocoaGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = CocoaGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805AEE5114E0AD80006C9354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		805AEE5514E0AD80006C9354 /* CocoaGateway-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaGateway-Info.plist"; sourceTree = "<group>"; };
+		805AEE5714E0AD80006C9354 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		805AEE5914E0AD80006C9354 /* CocoaGateway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaGateway-Prefix.pch"; sourceTree = "<group>"; };
+		805AEE6314E0B123006C9354 /* BridgeSupportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeSupportController.h; sourceTree = "<group>"; };
+		805AEE6414E0B123006C9354 /* BridgeSupportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeSupportController.m; sourceTree = "<group>"; };
+		805AEE6514E0B123006C9354 /* class.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = class.js; sourceTree = "<group>"; };
+		805AEE6A14E0B123006C9354 /* BurksPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurksPool.h; sourceTree = "<group>"; };
+		805AEE6B14E0B123006C9354 /* BurksPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurksPool.m; sourceTree = "<group>"; };
+		805AEE6C14E0B123006C9354 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDefines.h; sourceTree = "<group>"; };
+		805AEE6D14E0B123006C9354 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		805AEE6E14E0B123006C9354 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		805AEE7114E0B123006C9354 /* ffi-iphone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ffi-iphone.c"; sourceTree = "<group>"; };
+		805AEE7214E0B123006C9354 /* ffi-iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ffi-iphone.h"; sourceTree = "<group>"; };
+		805AEE7314E0B123006C9354 /* ffi-iphonesimulator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ffi-iphonesimulator.c"; sourceTree = "<group>"; };
+		805AEE7414E0B123006C9354 /* ffi-iphonesimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ffi-iphonesimulator.h"; sourceTree = "<group>"; };
+		805AEE7514E0B123006C9354 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		805AEE7614E0B123006C9354 /* ffi_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_common.h; sourceTree = "<group>"; };
+		805AEE7714E0B123006C9354 /* fficonfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig.h; sourceTree = "<group>"; };
+		805AEE7814E0B123006C9354 /* ffitarget-iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ffitarget-iphone.h"; sourceTree = "<group>"; };
+		805AEE7914E0B123006C9354 /* ffitarget-iphonesimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ffitarget-iphonesimulator.h"; sourceTree = "<group>"; };
+		805AEE7A14E0B123006C9354 /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		805AEE7B14E0B123006C9354 /* iphone-sysv.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "iphone-sysv.S"; sourceTree = "<group>"; };
+		805AEE7C14E0B123006C9354 /* iphonesimulator-darwin.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "iphonesimulator-darwin.S"; sourceTree = "<group>"; };
+		805AEE7E14E0B123006C9354 /* prep_cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prep_cif.c; sourceTree = "<group>"; };
+		805AEE7F14E0B123006C9354 /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
+		805AEE8014E0B123006C9354 /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
+		805AEE8614E0B123006C9354 /* JSCocoaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCocoaController.h; sourceTree = "<group>"; };
+		805AEE8714E0B123006C9354 /* JSCocoaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCocoaController.m; sourceTree = "<group>"; };
+		805AEE8814E0B123006C9354 /* JSCocoaFFIArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCocoaFFIArgument.h; sourceTree = "<group>"; };
+		805AEE8914E0B123006C9354 /* JSCocoaFFIArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCocoaFFIArgument.m; sourceTree = "<group>"; };
+		805AEE8A14E0B123006C9354 /* JSCocoaFFIClosure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCocoaFFIClosure.h; sourceTree = "<group>"; };
+		805AEE8B14E0B123006C9354 /* JSCocoaFFIClosure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCocoaFFIClosure.m; sourceTree = "<group>"; };
+		805AEE8C14E0B123006C9354 /* JSCocoaLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCocoaLib.h; sourceTree = "<group>"; };
+		805AEE8D14E0B123006C9354 /* JSCocoaLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCocoaLib.m; sourceTree = "<group>"; };
+		805AEE8E14E0B123006C9354 /* JSCocoaPrivateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCocoaPrivateObject.h; sourceTree = "<group>"; };
+		805AEE8F14E0B123006C9354 /* JSCocoaPrivateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCocoaPrivateObject.m; sourceTree = "<group>"; };
+		805AEE9014E0B123006C9354 /* jslint-jscocoa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jslint-jscocoa.js"; sourceTree = "<group>"; };
+		805AEECE14E0B644006C9354 /* JavascriptCore-dlsym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JavascriptCore-dlsym.h"; path = "jscocoa/iPhone/JavascriptCore-dlsym.h"; sourceTree = SOURCE_ROOT; };
+		805AEECF14E0B644006C9354 /* JavascriptCore-dlsym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JavascriptCore-dlsym.m"; path = "jscocoa/iPhone/JavascriptCore-dlsym.m"; sourceTree = SOURCE_ROOT; };
+		805AEED014E0B644006C9354 /* JavaScriptCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptCore.h; path = jscocoa/iPhone/JavaScriptCore.h; sourceTree = SOURCE_ROOT; };
+		805AEED114E0B644006C9354 /* JSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSBase.h; path = jscocoa/iPhone/JSBase.h; sourceTree = SOURCE_ROOT; };
+		805AEED214E0B644006C9354 /* JSContextRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSContextRef.h; path = jscocoa/iPhone/JSContextRef.h; sourceTree = SOURCE_ROOT; };
+		805AEED314E0B644006C9354 /* JSObjectRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSObjectRef.h; path = jscocoa/iPhone/JSObjectRef.h; sourceTree = SOURCE_ROOT; };
+		805AEED414E0B644006C9354 /* JSStringRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSStringRef.h; path = jscocoa/iPhone/JSStringRef.h; sourceTree = SOURCE_ROOT; };
+		805AEED514E0B644006C9354 /* JSStringRefCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSStringRefCF.h; path = jscocoa/iPhone/JSStringRefCF.h; sourceTree = SOURCE_ROOT; };
+		805AEED614E0B644006C9354 /* JSValueRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSValueRef.h; path = jscocoa/iPhone/JSValueRef.h; sourceTree = SOURCE_ROOT; };
+		805AEEE414E0BA3B006C9354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805AEE4814E0AD80006C9354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805AEE5214E0AD80006C9354 /* Foundation.framework in Frameworks */,
+				805AEEE514E0BA3B006C9354 /* UIKit.framework in Frameworks */,
+				8024005F14E0BFA200D70E73 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805AEE3F14E0AD80006C9354 = {
+			isa = PBXGroup;
+			children = (
+				805AEEC014E0B271006C9354 /* Libraries */,
+				805AEE5314E0AD80006C9354 /* CocoaGateway */,
+				805AEE5014E0AD80006C9354 /* Frameworks */,
+				805AEE4F14E0AD80006C9354 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		805AEE4F14E0AD80006C9354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE4E14E0AD80006C9354 /* CocoaGateway.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805AEE5014E0AD80006C9354 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				805AEEE414E0BA3B006C9354 /* UIKit.framework */,
+				8024005E14E0BFA200D70E73 /* CoreGraphics.framework */,
+				805AEE5114E0AD80006C9354 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805AEE5314E0AD80006C9354 /* CocoaGateway */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE5414E0AD80006C9354 /* Supporting Files */,
+			);
+			path = CocoaGateway;
+			sourceTree = "<group>";
+		};
+		805AEE5414E0AD80006C9354 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE5514E0AD80006C9354 /* CocoaGateway-Info.plist */,
+				805AEE5614E0AD80006C9354 /* InfoPlist.strings */,
+				805AEE5914E0AD80006C9354 /* CocoaGateway-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		805AEE6214E0B123006C9354 /* JSCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				805AEECD14E0B609006C9354 /* Core */,
+				805AEE6914E0B123006C9354 /* iPhone */,
+				805AEE6314E0B123006C9354 /* BridgeSupportController.h */,
+				805AEE6414E0B123006C9354 /* BridgeSupportController.m */,
+				805AEE8614E0B123006C9354 /* JSCocoaController.h */,
+				805AEE8714E0B123006C9354 /* JSCocoaController.m */,
+				805AEE8E14E0B123006C9354 /* JSCocoaPrivateObject.h */,
+				805AEE8F14E0B123006C9354 /* JSCocoaPrivateObject.m */,
+				805AEE8814E0B123006C9354 /* JSCocoaFFIArgument.h */,
+				805AEE8914E0B123006C9354 /* JSCocoaFFIArgument.m */,
+				805AEE8A14E0B123006C9354 /* JSCocoaFFIClosure.h */,
+				805AEE8B14E0B123006C9354 /* JSCocoaFFIClosure.m */,
+				805AEE8C14E0B123006C9354 /* JSCocoaLib.h */,
+				805AEE8D14E0B123006C9354 /* JSCocoaLib.m */,
+				805AEE6514E0B123006C9354 /* class.js */,
+				805AEE9014E0B123006C9354 /* jslint-jscocoa.js */,
+			);
+			name = JSCocoa;
+			path = jscocoa/JSCocoa;
+			sourceTree = SOURCE_ROOT;
+		};
+		805AEE6914E0B123006C9354 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE6A14E0B123006C9354 /* BurksPool.h */,
+				805AEE6B14E0B123006C9354 /* BurksPool.m */,
+				805AEE6C14E0B123006C9354 /* GDataDefines.h */,
+				805AEE6D14E0B123006C9354 /* GDataXMLNode.h */,
+				805AEE6E14E0B123006C9354 /* GDataXMLNode.m */,
+				805AEE6F14E0B123006C9354 /* libffi */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		805AEE6F14E0B123006C9354 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE7114E0B123006C9354 /* ffi-iphone.c */,
+				805AEE7214E0B123006C9354 /* ffi-iphone.h */,
+				805AEE7314E0B123006C9354 /* ffi-iphonesimulator.c */,
+				805AEE7414E0B123006C9354 /* ffi-iphonesimulator.h */,
+				805AEE7514E0B123006C9354 /* ffi.h */,
+				805AEE7614E0B123006C9354 /* ffi_common.h */,
+				805AEE7714E0B123006C9354 /* fficonfig.h */,
+				805AEE7814E0B123006C9354 /* ffitarget-iphone.h */,
+				805AEE7914E0B123006C9354 /* ffitarget-iphonesimulator.h */,
+				805AEE7A14E0B123006C9354 /* ffitarget.h */,
+				805AEE7B14E0B123006C9354 /* iphone-sysv.S */,
+				805AEE7C14E0B123006C9354 /* iphonesimulator-darwin.S */,
+				805AEE7E14E0B123006C9354 /* prep_cif.c */,
+				805AEE7F14E0B123006C9354 /* raw_api.c */,
+				805AEE8014E0B123006C9354 /* types.c */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		805AEEC014E0B271006C9354 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				805AEE6214E0B123006C9354 /* JSCocoa */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		805AEECD14E0B609006C9354 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				805AEECE14E0B644006C9354 /* JavascriptCore-dlsym.h */,
+				805AEECF14E0B644006C9354 /* JavascriptCore-dlsym.m */,
+				805AEED014E0B644006C9354 /* JavaScriptCore.h */,
+				805AEED114E0B644006C9354 /* JSBase.h */,
+				805AEED214E0B644006C9354 /* JSContextRef.h */,
+				805AEED314E0B644006C9354 /* JSObjectRef.h */,
+				805AEED414E0B644006C9354 /* JSStringRef.h */,
+				805AEED514E0B644006C9354 /* JSStringRefCF.h */,
+				805AEED614E0B644006C9354 /* JSValueRef.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		805AEE4914E0AD80006C9354 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805AEEB114E0B124006C9354 /* JSCocoaController.h in Headers */,
+				805AEED714E0B644006C9354 /* JavascriptCore-dlsym.h in Headers */,
+				805AEED914E0B644006C9354 /* JavaScriptCore.h in Headers */,
+				805AEE9914E0B124006C9354 /* BurksPool.h in Headers */,
+				805AEE9B14E0B124006C9354 /* GDataDefines.h in Headers */,
+				805AEE9C14E0B124006C9354 /* GDataXMLNode.h in Headers */,
+				805AEEA014E0B124006C9354 /* ffi-iphone.h in Headers */,
+				805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */,
+				805AEEA214E0B124006C9354 /* ffi-iphonesimulator.h in Headers */,
+				805AEEA314E0B124006C9354 /* ffi.h in Headers */,
+				805AEEA414E0B124006C9354 /* ffi_common.h in Headers */,
+				805AEEA514E0B124006C9354 /* fficonfig.h in Headers */,
+				805AEEA614E0B124006C9354 /* ffitarget-iphone.h in Headers */,
+				805AEEA714E0B124006C9354 /* ffitarget-iphonesimulator.h in Headers */,
+				805AEEA814E0B124006C9354 /* ffitarget.h in Headers */,
+				805AEEB314E0B124006C9354 /* JSCocoaFFIArgument.h in Headers */,
+				805AEEB514E0B124006C9354 /* JSCocoaFFIClosure.h in Headers */,
+				805AEEB714E0B124006C9354 /* JSCocoaLib.h in Headers */,
+				805AEEB914E0B124006C9354 /* JSCocoaPrivateObject.h in Headers */,
+				805AEEDA14E0B644006C9354 /* JSBase.h in Headers */,
+				805AEEDB14E0B644006C9354 /* JSContextRef.h in Headers */,
+				805AEEDC14E0B644006C9354 /* JSObjectRef.h in Headers */,
+				805AEEDD14E0B644006C9354 /* JSStringRef.h in Headers */,
+				805AEEDE14E0B644006C9354 /* JSStringRefCF.h in Headers */,
+				805AEEDF14E0B644006C9354 /* JSValueRef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		805AEE4D14E0AD80006C9354 /* CocoaGateway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805AEE5C14E0AD80006C9354 /* Build configuration list for PBXNativeTarget "CocoaGateway" */;
+			buildPhases = (
+				805AEE4614E0AD80006C9354 /* ShellScript */,
+				805AEE4714E0AD80006C9354 /* Sources */,
+				805AEE4814E0AD80006C9354 /* Frameworks */,
+				805AEE4914E0AD80006C9354 /* Headers */,
+				805AEE4A14E0AD80006C9354 /* Resources */,
+				805AEE4B14E0AD80006C9354 /* ShellScript */,
+				805AEE4C14E0AD80006C9354 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaGateway;
+			productName = CocoaGateway;
+			productReference = 805AEE4E14E0AD80006C9354 /* CocoaGateway.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805AEE4114E0AD80006C9354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Raku;
+			};
+			buildConfigurationList = 805AEE4414E0AD80006C9354 /* Build configuration list for PBXProject "CocoaGateway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 805AEE3F14E0AD80006C9354;
+			productRefGroup = 805AEE4F14E0AD80006C9354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805AEE4D14E0AD80006C9354 /* CocoaGateway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805AEE4A14E0AD80006C9354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805AEEE014E0B8A0006C9354 /* class.js in Resources */,
+				805AEEE114E0B8A0006C9354 /* jslint-jscocoa.js in Resources */,
+				805AEE5814E0AD80006C9354 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		805AEE4614E0AD80006C9354 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		805AEE4B14E0AD80006C9354 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INLINED_PYHON_SCRIPT=\"import sys; import os.path; headerPathFromFind = sys.argv[2]; srcRoot = sys.argv[1]; headerPathFromFindWithoutFilename = os.path.dirname( headerPathFromFind ); relatedPathForDirectory = os.path.relpath( headerPathFromFindWithoutFilename, srcRoot ); print( relatedPathForDirectory );\"\n\nHEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$( ls -1 \"$FRAMEWORK_HEADERS_DIR\" )\n\n\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n\n   FIND_RESULT=$( find \"$HEADERS_ROOT\" -name \"$PUBLIC_HEADER\" )\n   RELATIVE_PATH=$( python -c \"$INLINED_PYHON_SCRIPT\" \"$HEADERS_ROOT\" \"$FIND_RESULT\" )\n\n   mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n   mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\ndone\n";
+		};
+		805AEE4C14E0AD80006C9354 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805AEE4714E0AD80006C9354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805AEE9514E0B124006C9354 /* BridgeSupportController.m in Sources */,
+				805AEE9A14E0B124006C9354 /* BurksPool.m in Sources */,
+				805AEE9D14E0B124006C9354 /* GDataXMLNode.m in Sources */,
+				805AEE9F14E0B124006C9354 /* ffi-iphone.c in Sources */,
+				805AEEA114E0B124006C9354 /* ffi-iphonesimulator.c in Sources */,
+				805AEEA914E0B124006C9354 /* iphone-sysv.S in Sources */,
+				805AEEAA14E0B124006C9354 /* iphonesimulator-darwin.S in Sources */,
+				805AEEAC14E0B124006C9354 /* prep_cif.c in Sources */,
+				805AEEAD14E0B124006C9354 /* raw_api.c in Sources */,
+				805AEEAE14E0B124006C9354 /* types.c in Sources */,
+				805AEEB214E0B124006C9354 /* JSCocoaController.m in Sources */,
+				805AEEB414E0B124006C9354 /* JSCocoaFFIArgument.m in Sources */,
+				805AEEB614E0B124006C9354 /* JSCocoaFFIClosure.m in Sources */,
+				805AEEB814E0B124006C9354 /* JSCocoaLib.m in Sources */,
+				805AEEBA14E0B124006C9354 /* JSCocoaPrivateObject.m in Sources */,
+				805AEED814E0B644006C9354 /* JavascriptCore-dlsym.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		805AEE5614E0AD80006C9354 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805AEE5714E0AD80006C9354 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		805AEE5A14E0AD80006C9354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		805AEE5B14E0AD80006C9354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805AEE5D14E0AD80006C9354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaGateway/CocoaGateway-Prefix.pch";
+				INFOPLIST_FILE = "CocoaGateway/CocoaGateway-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		805AEE5E14E0AD80006C9354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaGateway/CocoaGateway-Prefix.pch";
+				INFOPLIST_FILE = "CocoaGateway/CocoaGateway-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805AEE4414E0AD80006C9354 /* Build configuration list for PBXProject "CocoaGateway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805AEE5A14E0AD80006C9354 /* Debug */,
+				805AEE5B14E0AD80006C9354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805AEE5C14E0AD80006C9354 /* Build configuration list for PBXNativeTarget "CocoaGateway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805AEE5D14E0AD80006C9354 /* Debug */,
+				805AEE5E14E0AD80006C9354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 805AEE4114E0AD80006C9354 /* Project object */;
+}
