@@ -7,66 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800BDC9814E5EF1600EB296F /* iPhone.bridgesupport in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC9714E5EF1600EB296F /* iPhone.bridgesupport */; };
 		8024005F14E0BFA200D70E73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8024005E14E0BFA200D70E73 /* CoreGraphics.framework */; };
-		802400DE14E0D53C00D70E73 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D014E0D53C00D70E73 /* HTTPAuthenticationRequest.h */; };
+		802400DE14E0D53C00D70E73 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D014E0D53C00D70E73 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400DF14E0D53C00D70E73 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400D114E0D53C00D70E73 /* HTTPAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400E014E0D53C00D70E73 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D214E0D53C00D70E73 /* HTTPConnection.h */; };
+		802400E014E0D53C00D70E73 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D214E0D53C00D70E73 /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400E114E0D53C00D70E73 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400D314E0D53C00D70E73 /* HTTPConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400E214E0D53C00D70E73 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D414E0D53C00D70E73 /* HTTPLogging.h */; };
-		802400E314E0D53C00D70E73 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D514E0D53C00D70E73 /* HTTPMessage.h */; };
+		802400E214E0D53C00D70E73 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D414E0D53C00D70E73 /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802400E314E0D53C00D70E73 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D514E0D53C00D70E73 /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400E414E0D53C00D70E73 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400D614E0D53C00D70E73 /* HTTPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400E514E0D53C00D70E73 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D714E0D53C00D70E73 /* HTTPResponse.h */; };
-		802400E614E0D53C00D70E73 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D814E0D53C00D70E73 /* HTTPServer.h */; };
+		802400E514E0D53C00D70E73 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D714E0D53C00D70E73 /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802400E614E0D53C00D70E73 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400D814E0D53C00D70E73 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400E714E0D53C00D70E73 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400D914E0D53C00D70E73 /* HTTPServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400E814E0D53C00D70E73 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400DA14E0D53C00D70E73 /* WebSocket.h */; };
+		802400E814E0D53C00D70E73 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400DA14E0D53C00D70E73 /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400E914E0D53C00D70E73 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400DB14E0D53C00D70E73 /* WebSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400F714E0D5E300D70E73 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400EC14E0D5E300D70E73 /* DDAbstractDatabaseLogger.h */; };
+		802400F714E0D5E300D70E73 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400EC14E0D5E300D70E73 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400F814E0D5E300D70E73 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400ED14E0D5E300D70E73 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400F914E0D5E300D70E73 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400EE14E0D5E300D70E73 /* DDASLLogger.h */; };
+		802400F914E0D5E300D70E73 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400EE14E0D5E300D70E73 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400FA14E0D5E300D70E73 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400EF14E0D5E300D70E73 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400FB14E0D5E300D70E73 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F014E0D5E300D70E73 /* DDFileLogger.h */; };
+		802400FB14E0D5E300D70E73 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F014E0D5E300D70E73 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400FC14E0D5E300D70E73 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400F114E0D5E300D70E73 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400FD14E0D5E300D70E73 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F214E0D5E300D70E73 /* DDLog.h */; };
+		802400FD14E0D5E300D70E73 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F214E0D5E300D70E73 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802400FE14E0D5E300D70E73 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400F314E0D5E300D70E73 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802400FF14E0D5E300D70E73 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F414E0D5E300D70E73 /* DDTTYLogger.h */; };
 		8024010014E0D5E300D70E73 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 802400F514E0D5E300D70E73 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024010614E0D5F800D70E73 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010314E0D5F800D70E73 /* GCDAsyncSocket.h */; };
+		8024010614E0D5F800D70E73 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010314E0D5F800D70E73 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024010714E0D5F800D70E73 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024010414E0D5F800D70E73 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024010F14E0D60F00D70E73 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010914E0D60F00D70E73 /* DDData.h */; };
+		8024010F14E0D60F00D70E73 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010914E0D60F00D70E73 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024011014E0D60F00D70E73 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024010A14E0D60F00D70E73 /* DDData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024011114E0D60F00D70E73 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010B14E0D60F00D70E73 /* DDNumber.h */; };
+		8024011114E0D60F00D70E73 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010B14E0D60F00D70E73 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024011214E0D60F00D70E73 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024010C14E0D60F00D70E73 /* DDNumber.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024011314E0D60F00D70E73 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010D14E0D60F00D70E73 /* DDRange.h */; };
+		8024011314E0D60F00D70E73 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024010D14E0D60F00D70E73 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024011414E0D60F00D70E73 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024010E14E0D60F00D70E73 /* DDRange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024012014E0D61D00D70E73 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011614E0D61D00D70E73 /* HTTPAsyncFileResponse.h */; };
+		8024012014E0D61D00D70E73 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011614E0D61D00D70E73 /* HTTPAsyncFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024012114E0D61D00D70E73 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024011714E0D61D00D70E73 /* HTTPAsyncFileResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024012214E0D61D00D70E73 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011814E0D61D00D70E73 /* HTTPDataResponse.h */; };
+		8024012214E0D61D00D70E73 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011814E0D61D00D70E73 /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024012314E0D61D00D70E73 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024011914E0D61D00D70E73 /* HTTPDataResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024012414E0D61D00D70E73 /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011A14E0D61D00D70E73 /* HTTPDynamicFileResponse.h */; };
+		8024012414E0D61D00D70E73 /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011A14E0D61D00D70E73 /* HTTPDynamicFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024012514E0D61D00D70E73 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024011B14E0D61D00D70E73 /* HTTPDynamicFileResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024012614E0D61D00D70E73 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011C14E0D61D00D70E73 /* HTTPFileResponse.h */; };
+		8024012614E0D61D00D70E73 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011C14E0D61D00D70E73 /* HTTPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024012714E0D61D00D70E73 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024011D14E0D61D00D70E73 /* HTTPFileResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8024012814E0D61D00D70E73 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011E14E0D61D00D70E73 /* HTTPRedirectResponse.h */; };
+		8024012814E0D61D00D70E73 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024011E14E0D61D00D70E73 /* HTTPRedirectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8024012914E0D61D00D70E73 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024011F14E0D61D00D70E73 /* HTTPRedirectResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8024012C14E0D8FE00D70E73 /* CocoaGateway.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024012A14E0D8FE00D70E73 /* CocoaGateway.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8024012D14E0D8FE00D70E73 /* CocoaGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024012B14E0D8FE00D70E73 /* CocoaGateway.m */; };
+		8024014214E3017800D70E73 /* MyHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8024014014E3017800D70E73 /* MyHTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8024014314E3017800D70E73 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024014114E3017800D70E73 /* MyHTTPConnection.m */; };
+		8024014914E3048600D70E73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8024014514E3048600D70E73 /* InfoPlist.strings */; };
+		8024014A14E3048600D70E73 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 8024014814E3048600D70E73 /* index.html */; };
+		8024017B14E5525200D70E73 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 802400F414E0D5E300D70E73 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEE5214E0AD80006C9354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AEE5114E0AD80006C9354 /* Foundation.framework */; };
-		805AEE5814E0AD80006C9354 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE5614E0AD80006C9354 /* InfoPlist.strings */; };
-		805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6314E0B123006C9354 /* BridgeSupportController.h */; settings = {ATTRIBUTES = (); }; };
+		805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6314E0B123006C9354 /* BridgeSupportController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEE9514E0B124006C9354 /* BridgeSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6414E0B123006C9354 /* BridgeSupportController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEE9914E0B124006C9354 /* BurksPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6A14E0B123006C9354 /* BurksPool.h */; };
+		805AEE9914E0B124006C9354 /* BurksPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6A14E0B123006C9354 /* BurksPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEE9A14E0B124006C9354 /* BurksPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6B14E0B123006C9354 /* BurksPool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEE9B14E0B124006C9354 /* GDataDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6C14E0B123006C9354 /* GDataDefines.h */; };
-		805AEE9C14E0B124006C9354 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6D14E0B123006C9354 /* GDataXMLNode.h */; };
+		805AEE9B14E0B124006C9354 /* GDataDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6C14E0B123006C9354 /* GDataDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEE9C14E0B124006C9354 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE6D14E0B123006C9354 /* GDataXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEE9D14E0B124006C9354 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE6E14E0B123006C9354 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		805AEE9F14E0B124006C9354 /* ffi-iphone.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7114E0B123006C9354 /* ffi-iphone.c */; };
-		805AEEA014E0B124006C9354 /* ffi-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7214E0B123006C9354 /* ffi-iphone.h */; };
+		805AEEA014E0B124006C9354 /* ffi-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7214E0B123006C9354 /* ffi-iphone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEA114E0B124006C9354 /* ffi-iphonesimulator.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7314E0B123006C9354 /* ffi-iphonesimulator.c */; };
-		805AEEA214E0B124006C9354 /* ffi-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7414E0B123006C9354 /* ffi-iphonesimulator.h */; };
-		805AEEA314E0B124006C9354 /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7514E0B123006C9354 /* ffi.h */; };
-		805AEEA414E0B124006C9354 /* ffi_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7614E0B123006C9354 /* ffi_common.h */; };
-		805AEEA514E0B124006C9354 /* fficonfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7714E0B123006C9354 /* fficonfig.h */; };
-		805AEEA614E0B124006C9354 /* ffitarget-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7814E0B123006C9354 /* ffitarget-iphone.h */; };
-		805AEEA714E0B124006C9354 /* ffitarget-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7914E0B123006C9354 /* ffitarget-iphonesimulator.h */; };
-		805AEEA814E0B124006C9354 /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7A14E0B123006C9354 /* ffitarget.h */; };
+		805AEEA214E0B124006C9354 /* ffi-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7414E0B123006C9354 /* ffi-iphonesimulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA314E0B124006C9354 /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7514E0B123006C9354 /* ffi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA414E0B124006C9354 /* ffi_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7614E0B123006C9354 /* ffi_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA514E0B124006C9354 /* fficonfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7714E0B123006C9354 /* fficonfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA614E0B124006C9354 /* ffitarget-iphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7814E0B123006C9354 /* ffitarget-iphone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA714E0B124006C9354 /* ffitarget-iphonesimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7914E0B123006C9354 /* ffitarget-iphonesimulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEA814E0B124006C9354 /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE7A14E0B123006C9354 /* ffitarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEA914E0B124006C9354 /* iphone-sysv.S in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7B14E0B123006C9354 /* iphone-sysv.S */; };
 		805AEEAA14E0B124006C9354 /* iphonesimulator-darwin.S in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7C14E0B123006C9354 /* iphonesimulator-darwin.S */; };
 		805AEEAC14E0B124006C9354 /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE7E14E0B123006C9354 /* prep_cif.c */; };
@@ -74,29 +80,30 @@
 		805AEEAE14E0B124006C9354 /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8014E0B123006C9354 /* types.c */; };
 		805AEEB114E0B124006C9354 /* JSCocoaController.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8614E0B123006C9354 /* JSCocoaController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEB214E0B124006C9354 /* JSCocoaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8714E0B123006C9354 /* JSCocoaController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEEB314E0B124006C9354 /* JSCocoaFFIArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8814E0B123006C9354 /* JSCocoaFFIArgument.h */; };
+		805AEEB314E0B124006C9354 /* JSCocoaFFIArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8814E0B123006C9354 /* JSCocoaFFIArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEB414E0B124006C9354 /* JSCocoaFFIArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8914E0B123006C9354 /* JSCocoaFFIArgument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEEB514E0B124006C9354 /* JSCocoaFFIClosure.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8A14E0B123006C9354 /* JSCocoaFFIClosure.h */; };
+		805AEEB514E0B124006C9354 /* JSCocoaFFIClosure.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8A14E0B123006C9354 /* JSCocoaFFIClosure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEB614E0B124006C9354 /* JSCocoaFFIClosure.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8B14E0B123006C9354 /* JSCocoaFFIClosure.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEEB714E0B124006C9354 /* JSCocoaLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8C14E0B123006C9354 /* JSCocoaLib.h */; };
+		805AEEB714E0B124006C9354 /* JSCocoaLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8C14E0B123006C9354 /* JSCocoaLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEB814E0B124006C9354 /* JSCocoaLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8D14E0B123006C9354 /* JSCocoaLib.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		805AEEB914E0B124006C9354 /* JSCocoaPrivateObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8E14E0B123006C9354 /* JSCocoaPrivateObject.h */; };
+		805AEEB914E0B124006C9354 /* JSCocoaPrivateObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEE8E14E0B123006C9354 /* JSCocoaPrivateObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEBA14E0B124006C9354 /* JSCocoaPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEE8F14E0B123006C9354 /* JSCocoaPrivateObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		805AEED714E0B644006C9354 /* JavascriptCore-dlsym.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEECE14E0B644006C9354 /* JavascriptCore-dlsym.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEED814E0B644006C9354 /* JavascriptCore-dlsym.m in Sources */ = {isa = PBXBuildFile; fileRef = 805AEECF14E0B644006C9354 /* JavascriptCore-dlsym.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		805AEED914E0B644006C9354 /* JavaScriptCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED014E0B644006C9354 /* JavaScriptCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		805AEEDA14E0B644006C9354 /* JSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED114E0B644006C9354 /* JSBase.h */; };
-		805AEEDB14E0B644006C9354 /* JSContextRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED214E0B644006C9354 /* JSContextRef.h */; };
-		805AEEDC14E0B644006C9354 /* JSObjectRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED314E0B644006C9354 /* JSObjectRef.h */; };
-		805AEEDD14E0B644006C9354 /* JSStringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED414E0B644006C9354 /* JSStringRef.h */; };
-		805AEEDE14E0B644006C9354 /* JSStringRefCF.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED514E0B644006C9354 /* JSStringRefCF.h */; };
-		805AEEDF14E0B644006C9354 /* JSValueRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED614E0B644006C9354 /* JSValueRef.h */; };
+		805AEEDA14E0B644006C9354 /* JSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED114E0B644006C9354 /* JSBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDB14E0B644006C9354 /* JSContextRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED214E0B644006C9354 /* JSContextRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDC14E0B644006C9354 /* JSObjectRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED314E0B644006C9354 /* JSObjectRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDD14E0B644006C9354 /* JSStringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED414E0B644006C9354 /* JSStringRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDE14E0B644006C9354 /* JSStringRefCF.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED514E0B644006C9354 /* JSStringRefCF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		805AEEDF14E0B644006C9354 /* JSValueRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 805AEED614E0B644006C9354 /* JSValueRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		805AEEE014E0B8A0006C9354 /* class.js in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE6514E0B123006C9354 /* class.js */; };
 		805AEEE114E0B8A0006C9354 /* jslint-jscocoa.js in Resources */ = {isa = PBXBuildFile; fileRef = 805AEE9014E0B123006C9354 /* jslint-jscocoa.js */; };
 		805AEEE514E0BA3B006C9354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AEEE414E0BA3B006C9354 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800BDC9714E5EF1600EB296F /* iPhone.bridgesupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = iPhone.bridgesupport; path = jscocoa/iPhone/iPhone.bridgesupport; sourceTree = SOURCE_ROOT; };
 		8024005E14E0BFA200D70E73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		802400D014E0D53C00D70E73 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPAuthenticationRequest.h; path = CocoaHTTPServer/Core/HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
 		802400D114E0D53C00D70E73 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPAuthenticationRequest.m; path = CocoaHTTPServer/Core/HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
@@ -138,10 +145,14 @@
 		8024011D14E0D61D00D70E73 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
 		8024011E14E0D61D00D70E73 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
 		8024011F14E0D61D00D70E73 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		8024012A14E0D8FE00D70E73 /* CocoaGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGateway.h; sourceTree = "<group>"; };
+		8024012B14E0D8FE00D70E73 /* CocoaGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaGateway.m; sourceTree = "<group>"; };
+		8024014014E3017800D70E73 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
+		8024014114E3017800D70E73 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
+		8024014614E3048600D70E73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8024014814E3048600D70E73 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		805AEE4E14E0AD80006C9354 /* CocoaGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = CocoaGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805AEE5114E0AD80006C9354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		805AEE5514E0AD80006C9354 /* CocoaGateway-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaGateway-Info.plist"; sourceTree = "<group>"; };
-		805AEE5714E0AD80006C9354 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		805AEE5914E0AD80006C9354 /* CocoaGateway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaGateway-Prefix.pch"; sourceTree = "<group>"; };
 		805AEE6314E0B123006C9354 /* BridgeSupportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeSupportController.h; sourceTree = "<group>"; };
 		805AEE6414E0B123006C9354 /* BridgeSupportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeSupportController.m; sourceTree = "<group>"; };
@@ -284,9 +295,47 @@
 			path = CocoaHTTPServer/Core/Responses;
 			sourceTree = SOURCE_ROOT;
 		};
+		8024013A14E0DB6200D70E73 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8024012A14E0D8FE00D70E73 /* CocoaGateway.h */,
+				8024012B14E0D8FE00D70E73 /* CocoaGateway.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8024013F14E3017800D70E73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8024014014E3017800D70E73 /* MyHTTPConnection.h */,
+				8024014114E3017800D70E73 /* MyHTTPConnection.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8024014414E3048600D70E73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8024014514E3048600D70E73 /* InfoPlist.strings */,
+				800BDC9714E5EF1600EB296F /* iPhone.bridgesupport */,
+				8024014714E3048600D70E73 /* Web */,
+			);
+			name = Assets;
+			path = CocoaGateway/Assets;
+			sourceTree = "<group>";
+		};
+		8024014714E3048600D70E73 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8024014814E3048600D70E73 /* index.html */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		805AEE3F14E0AD80006C9354 = {
 			isa = PBXGroup;
 			children = (
+				8024014414E3048600D70E73 /* Assets */,
 				805AEEC014E0B271006C9354 /* Vendor */,
 				805AEE5314E0AD80006C9354 /* CocoaGateway */,
 				805AEE5014E0AD80006C9354 /* Frameworks */,
@@ -315,19 +364,19 @@
 		805AEE5314E0AD80006C9354 /* CocoaGateway */ = {
 			isa = PBXGroup;
 			children = (
-				805AEE5414E0AD80006C9354 /* Supporting Files */,
+				8024013F14E3017800D70E73 /* Controllers */,
+				8024013A14E0DB6200D70E73 /* Classes */,
+				805AEE5414E0AD80006C9354 /* Other Sources */,
 			);
 			path = CocoaGateway;
 			sourceTree = "<group>";
 		};
-		805AEE5414E0AD80006C9354 /* Supporting Files */ = {
+		805AEE5414E0AD80006C9354 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				805AEE5514E0AD80006C9354 /* CocoaGateway-Info.plist */,
-				805AEE5614E0AD80006C9354 /* InfoPlist.strings */,
 				805AEE5914E0AD80006C9354 /* CocoaGateway-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 		805AEE6214E0B123006C9354 /* JSCocoa */ = {
@@ -423,14 +472,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8024012C14E0D8FE00D70E73 /* CocoaGateway.h in Headers */,
 				805AEEB114E0B124006C9354 /* JSCocoaController.h in Headers */,
 				805AEED714E0B644006C9354 /* JavascriptCore-dlsym.h in Headers */,
 				805AEED914E0B644006C9354 /* JavaScriptCore.h in Headers */,
+				805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */,
 				805AEE9914E0B124006C9354 /* BurksPool.h in Headers */,
 				805AEE9B14E0B124006C9354 /* GDataDefines.h in Headers */,
 				805AEE9C14E0B124006C9354 /* GDataXMLNode.h in Headers */,
+				802400E614E0D53C00D70E73 /* HTTPServer.h in Headers */,
 				805AEEA014E0B124006C9354 /* ffi-iphone.h in Headers */,
-				805AEE9414E0B124006C9354 /* BridgeSupportController.h in Headers */,
 				805AEEA214E0B124006C9354 /* ffi-iphonesimulator.h in Headers */,
 				805AEEA314E0B124006C9354 /* ffi.h in Headers */,
 				805AEEA414E0B124006C9354 /* ffi_common.h in Headers */,
@@ -447,19 +498,18 @@
 				805AEEDC14E0B644006C9354 /* JSObjectRef.h in Headers */,
 				805AEEDD14E0B644006C9354 /* JSStringRef.h in Headers */,
 				805AEEDE14E0B644006C9354 /* JSStringRefCF.h in Headers */,
+				802400FD14E0D5E300D70E73 /* DDLog.h in Headers */,
 				805AEEDF14E0B644006C9354 /* JSValueRef.h in Headers */,
 				802400DE14E0D53C00D70E73 /* HTTPAuthenticationRequest.h in Headers */,
 				802400E014E0D53C00D70E73 /* HTTPConnection.h in Headers */,
 				802400E214E0D53C00D70E73 /* HTTPLogging.h in Headers */,
 				802400E314E0D53C00D70E73 /* HTTPMessage.h in Headers */,
 				802400E514E0D53C00D70E73 /* HTTPResponse.h in Headers */,
-				802400E614E0D53C00D70E73 /* HTTPServer.h in Headers */,
 				802400E814E0D53C00D70E73 /* WebSocket.h in Headers */,
+				8024017B14E5525200D70E73 /* DDTTYLogger.h in Headers */,
 				802400F714E0D5E300D70E73 /* DDAbstractDatabaseLogger.h in Headers */,
 				802400F914E0D5E300D70E73 /* DDASLLogger.h in Headers */,
 				802400FB14E0D5E300D70E73 /* DDFileLogger.h in Headers */,
-				802400FD14E0D5E300D70E73 /* DDLog.h in Headers */,
-				802400FF14E0D5E300D70E73 /* DDTTYLogger.h in Headers */,
 				8024010614E0D5F800D70E73 /* GCDAsyncSocket.h in Headers */,
 				8024010F14E0D60F00D70E73 /* DDData.h in Headers */,
 				8024011114E0D60F00D70E73 /* DDNumber.h in Headers */,
@@ -469,6 +519,7 @@
 				8024012414E0D61D00D70E73 /* HTTPDynamicFileResponse.h in Headers */,
 				8024012614E0D61D00D70E73 /* HTTPFileResponse.h in Headers */,
 				8024012814E0D61D00D70E73 /* HTTPRedirectResponse.h in Headers */,
+				8024014214E3017800D70E73 /* MyHTTPConnection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +581,9 @@
 			files = (
 				805AEEE014E0B8A0006C9354 /* class.js in Resources */,
 				805AEEE114E0B8A0006C9354 /* jslint-jscocoa.js in Resources */,
-				805AEE5814E0AD80006C9354 /* InfoPlist.strings in Resources */,
+				8024014914E3048600D70E73 /* InfoPlist.strings in Resources */,
+				8024014A14E3048600D70E73 /* index.html in Resources */,
+				800BDC9814E5EF1600EB296F /* iPhone.bridgesupport in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +592,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		805AEE4614E0AD80006C9354 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
 		};
@@ -565,16 +618,17 @@
 		};
 		805AEE4C14E0AD80006C9354 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n# Copy to $HOME/Library/Frameworks\necho cp -af \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\" $HOME/Library/Frameworks/\nrm -rf \"$HOME/Library/Frameworks/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"$HOME/Library/Frameworks/${PRODUCT_NAME}.framework\"\nmv -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" $HOME/Library/Frameworks/\nmv -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\" $HOME/Library/Frameworks/\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -618,16 +672,18 @@
 				8024012514E0D61D00D70E73 /* HTTPDynamicFileResponse.m in Sources */,
 				8024012714E0D61D00D70E73 /* HTTPFileResponse.m in Sources */,
 				8024012914E0D61D00D70E73 /* HTTPRedirectResponse.m in Sources */,
+				8024012D14E0D8FE00D70E73 /* CocoaGateway.m in Sources */,
+				8024014314E3017800D70E73 /* MyHTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		805AEE5614E0AD80006C9354 /* InfoPlist.strings */ = {
+		8024014514E3048600D70E73 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				805AEE5714E0AD80006C9354 /* en */,
+				8024014614E3048600D70E73 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

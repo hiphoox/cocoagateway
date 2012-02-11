@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800BDC6F14E5859B00EB296F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800BDC6E14E5859B00EB296F /* UIKit.framework */; };
+		800BDC7114E5859B00EB296F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800BDC7014E5859B00EB296F /* Foundation.framework */; };
+		800BDC7314E5859B00EB296F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800BDC7214E5859B00EB296F /* CoreGraphics.framework */; };
+		800BDC7914E5859B00EB296F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC7714E5859B00EB296F /* InfoPlist.strings */; };
+		800BDC7B14E5859B00EB296F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 800BDC7A14E5859B00EB296F /* main.m */; };
+		800BDC7F14E5859B00EB296F /* RKUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 800BDC7E14E5859B00EB296F /* RKUAppDelegate.m */; };
+		800BDC8214E5859B00EB296F /* RKUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800BDC8114E5859B00EB296F /* RKUViewController.m */; };
+		800BDC8514E5859B00EB296F /* RKUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC8314E5859B00EB296F /* RKUViewController.xib */; };
+		800BDC9114E58A6000EB296F /* CocoaGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800BDC8C14E58A6000EB296F /* CocoaGateway.framework */; };
+		800BDC9214E58A6000EB296F /* class.js in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC8E14E58A6000EB296F /* class.js */; };
+		800BDC9314E58A6000EB296F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC8F14E58A6000EB296F /* index.html */; };
+		800BDC9414E58A6000EB296F /* jslint-jscocoa.js in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC9014E58A6000EB296F /* jslint-jscocoa.js */; };
+		800BDC9614E5920300EB296F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800BDC9514E5920300EB296F /* CFNetwork.framework */; };
+		800BDC9B14E5F94E00EB296F /* iPhone.bridgesupport in Resources */ = {isa = PBXBuildFile; fileRef = 800BDC9A14E5F94E00EB296F /* iPhone.bridgesupport */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		800BDC6A14E5859B00EB296F /* SimpleCocoaGateway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCocoaGateway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		800BDC6E14E5859B00EB296F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		800BDC7014E5859B00EB296F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		800BDC7214E5859B00EB296F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		800BDC7614E5859B00EB296F /* SimpleCocoaGateway-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleCocoaGateway-Info.plist"; sourceTree = "<group>"; };
+		800BDC7814E5859B00EB296F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		800BDC7A14E5859B00EB296F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		800BDC7C14E5859B00EB296F /* SimpleCocoaGateway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleCocoaGateway-Prefix.pch"; sourceTree = "<group>"; };
+		800BDC7D14E5859B00EB296F /* RKUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKUAppDelegate.h; sourceTree = "<group>"; };
+		800BDC7E14E5859B00EB296F /* RKUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKUAppDelegate.m; sourceTree = "<group>"; };
+		800BDC8014E5859B00EB296F /* RKUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKUViewController.h; sourceTree = "<group>"; };
+		800BDC8114E5859B00EB296F /* RKUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKUViewController.m; sourceTree = "<group>"; };
+		800BDC8414E5859B00EB296F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RKUViewController.xib; sourceTree = "<group>"; };
+		800BDC8C14E58A6000EB296F /* CocoaGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaGateway.framework; sourceTree = "<group>"; };
+		800BDC8E14E58A6000EB296F /* class.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = class.js; sourceTree = "<group>"; };
+		800BDC8F14E58A6000EB296F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		800BDC9014E58A6000EB296F /* jslint-jscocoa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jslint-jscocoa.js"; sourceTree = "<group>"; };
+		800BDC9514E5920300EB296F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		800BDC9A14E5F94E00EB296F /* iPhone.bridgesupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iPhone.bridgesupport; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800BDC6714E5859B00EB296F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800BDC9614E5920300EB296F /* CFNetwork.framework in Frameworks */,
+				800BDC6F14E5859B00EB296F /* UIKit.framework in Frameworks */,
+				800BDC7114E5859B00EB296F /* Foundation.framework in Frameworks */,
+				800BDC7314E5859B00EB296F /* CoreGraphics.framework in Frameworks */,
+				800BDC9114E58A6000EB296F /* CocoaGateway.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800BDC5F14E5859A00EB296F = {
+			isa = PBXGroup;
+			children = (
+				800BDC8B14E58A6000EB296F /* CocoaGateway.embeddedframework */,
+				800BDC7414E5859B00EB296F /* SimpleCocoaGateway */,
+				800BDC6D14E5859B00EB296F /* Frameworks */,
+				800BDC6B14E5859B00EB296F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800BDC6B14E5859B00EB296F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC6A14E5859B00EB296F /* SimpleCocoaGateway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800BDC6D14E5859B00EB296F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC9514E5920300EB296F /* CFNetwork.framework */,
+				800BDC6E14E5859B00EB296F /* UIKit.framework */,
+				800BDC7014E5859B00EB296F /* Foundation.framework */,
+				800BDC7214E5859B00EB296F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800BDC7414E5859B00EB296F /* SimpleCocoaGateway */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC7D14E5859B00EB296F /* RKUAppDelegate.h */,
+				800BDC7E14E5859B00EB296F /* RKUAppDelegate.m */,
+				800BDC8014E5859B00EB296F /* RKUViewController.h */,
+				800BDC8114E5859B00EB296F /* RKUViewController.m */,
+				800BDC8314E5859B00EB296F /* RKUViewController.xib */,
+				800BDC7514E5859B00EB296F /* Supporting Files */,
+			);
+			path = SimpleCocoaGateway;
+			sourceTree = "<group>";
+		};
+		800BDC7514E5859B00EB296F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC7614E5859B00EB296F /* SimpleCocoaGateway-Info.plist */,
+				800BDC7714E5859B00EB296F /* InfoPlist.strings */,
+				800BDC7A14E5859B00EB296F /* main.m */,
+				800BDC7C14E5859B00EB296F /* SimpleCocoaGateway-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		800BDC8B14E58A6000EB296F /* CocoaGateway.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC8C14E58A6000EB296F /* CocoaGateway.framework */,
+				800BDC8D14E58A6000EB296F /* Resources */,
+			);
+			name = CocoaGateway.embeddedframework;
+			path = ../../../../../../Library/Frameworks/CocoaGateway.embeddedframework;
+			sourceTree = "<group>";
+		};
+		800BDC8D14E58A6000EB296F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				800BDC9A14E5F94E00EB296F /* iPhone.bridgesupport */,
+				800BDC8E14E58A6000EB296F /* class.js */,
+				800BDC8F14E58A6000EB296F /* index.html */,
+				800BDC9014E58A6000EB296F /* jslint-jscocoa.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800BDC6914E5859B00EB296F /* SimpleCocoaGateway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800BDC8814E5859B00EB296F /* Build configuration list for PBXNativeTarget "SimpleCocoaGateway" */;
+			buildPhases = (
+				800BDC6614E5859B00EB296F /* Sources */,
+				800BDC6714E5859B00EB296F /* Frameworks */,
+				800BDC6814E5859B00EB296F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCocoaGateway;
+			productName = SimpleCocoaGateway;
+			productReference = 800BDC6A14E5859B00EB296F /* SimpleCocoaGateway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800BDC6114E5859A00EB296F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Raku;
+			};
+			buildConfigurationList = 800BDC6414E5859A00EB296F /* Build configuration list for PBXProject "SimpleCocoaGateway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 800BDC5F14E5859A00EB296F;
+			productRefGroup = 800BDC6B14E5859B00EB296F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800BDC6914E5859B00EB296F /* SimpleCocoaGateway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800BDC6814E5859B00EB296F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800BDC7914E5859B00EB296F /* InfoPlist.strings in Resources */,
+				800BDC8514E5859B00EB296F /* RKUViewController.xib in Resources */,
+				800BDC9214E58A6000EB296F /* class.js in Resources */,
+				800BDC9414E58A6000EB296F /* jslint-jscocoa.js in Resources */,
+				800BDC9314E58A6000EB296F /* index.html in Resources */,
+				800BDC9B14E5F94E00EB296F /* iPhone.bridgesupport in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800BDC6614E5859B00EB296F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800BDC7B14E5859B00EB296F /* main.m in Sources */,
+				800BDC7F14E5859B00EB296F /* RKUAppDelegate.m in Sources */,
+				800BDC8214E5859B00EB296F /* RKUViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		800BDC7714E5859B00EB296F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800BDC7814E5859B00EB296F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		800BDC8314E5859B00EB296F /* RKUViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800BDC8414E5859B00EB296F /* en */,
+			);
+			name = RKUViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800BDC8614E5859B00EB296F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		800BDC8714E5859B00EB296F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		800BDC8914E5859B00EB296F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Frameworks/CocoaGateway.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleCocoaGateway/SimpleCocoaGateway-Prefix.pch";
+				INFOPLIST_FILE = "SimpleCocoaGateway/SimpleCocoaGateway-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		800BDC8A14E5859B00EB296F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Frameworks/CocoaGateway.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleCocoaGateway/SimpleCocoaGateway-Prefix.pch";
+				INFOPLIST_FILE = "SimpleCocoaGateway/SimpleCocoaGateway-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800BDC6414E5859A00EB296F /* Build configuration list for PBXProject "SimpleCocoaGateway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800BDC8614E5859B00EB296F /* Debug */,
+				800BDC8714E5859B00EB296F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800BDC8814E5859B00EB296F /* Build configuration list for PBXNativeTarget "SimpleCocoaGateway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800BDC8914E5859B00EB296F /* Debug */,
+				800BDC8A14E5859B00EB296F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 800BDC6114E5859A00EB296F /* Project object */;
+}

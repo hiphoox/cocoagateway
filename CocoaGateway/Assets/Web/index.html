@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>JSCocoa Console</title>
+</head>
+<style>
+* {
+font-size: small;
+}
+ol { list-style-type: none; }
+textarea {
+display: block;
+}
+li {
+	border: 1px solid #fff;
+}
+#container {
+	width: 1100px;
+}
+#console {
+	float: left;
+	width: 600px;
+}
+#mimic {
+	float: left;
+	width: 500px;
+}
+.clear {
+	clear: both;
+}
+/* for mimicing views */
+.view {
+  border: 1px solid #333;
+	position : absolute
+			}
+</style>
+<body>
+<h1>JSCocoa Console</h1>
+<div id="container">
+	<div id="console">
+		<form action="javascript:void()" name="cmd" >
+		<textarea id="jscode" name="jscode" rows="10" cols="60"></textarea>
+		Ctrl+Enter/meta+Enter to evaluate.
+		<a href="javascript:inspect_viewtree()">inspect view tree</a>
+		<!--
+		<input type="submit" name="exec" value="Execute" />
+		-->
+		</form>
+		<ol id="responses">
+		</ol>
+	</div>
+	<div id="mimic">
+	<div id="screen" style="
+			margin: 40px;
+			width: 320px;
+			height: 480px;
+			border: 1px dashed;
+	"></div>
+	</div>
+</div>
+
+<hr class="clear" />
+JSCocoa Console &copy;2012 <a href="http://raku.mx">Raku</a>
+<script type="text/javascript" charset="utf-8" >
+function mimic (tree) {
+	var root = document.getElementById("screen");
+	var ty = root.offsetTop;
+	var tx = root.offsetLeft;
+	
+	tree.top += ty;
+	tree.left += tx;
+
+	createView(tree, root);
+}
+	function createView(def, parentElement, depth) {
+		depth = depth || 0;
+	console.log(def)
+		var e =document.createElement('div');
+
+
+		var zIndex = parentElement.style.zIndex || 0;
+
+		e.className = "view";
+		with ( e.style ) {
+			top = (def.top  ) + "px";
+			left = (def.left  ) + "px";
+			height = def.height + "px";
+			width = def.width + "px";
+			opacity = def.alpha ;
+			display = (e.hidden) ? 'none': '';
+			fontSize = "10px";
+		}
+
+
+		e.title = def.name; 
+		if (def.text ) {
+			e.innerHTML = def.text || "";
+			if ( def.color ) {
+				if ( def.color.match(/UIDeviceWhiteColorSpace/) ) {
+					e.style.color = 'white';
+				}
+			}
+		}
+		parentElement.appendChild(e);
+		if ( def.image ) {
+			var m;
+			if ( m = def.image.match(/ 0x([0-9a-f]{1,8})>/) ) {
+				var img = document.createElement('img');
+				img.src = '/png/' + m[1]
+				img.width = def.width;
+				img.height = def.height
+				e.appendChild(img);
+			}
+		}
+
+		for ( var i = 0; i < def.subviews.length; i++) {
+			var child = createView(def.subviews[i], e, depth + 1);
+			child.style.zIndex = zIndex + Math.pow(10,(4-depth)) * (i);
+		}
+
+		return e;
+	}
+function eval_on_remote(code) {
+		var req = new XMLHttpRequest();
+		req.open("POST", "post.html", false);
+		req.send(code);
+		return req.responseText;
+}
+function inspect_viewtree() {
+try {
+	var textarea = document.getElementById('inspect_viewtree');
+
+	var tree_in_json = eval_on_remote(textarea.value);
+	window.viewtree = eval( tree_in_json)
+	console.log (window.viewtree);
+
+	mimic(window.viewtree);
+}catch(e){
+	console.log(e);
+}
+}
+
+window.onload = function () {
+	var e = document.getElementById('jscode');
+	e.focus();
+
+	var f = document.forms.cmd;
+
+	function exec (ev) {
+		var jscode = f.jscode.value;
+
+		var t = eval_on_remote(jscode);
+
+		var li = document.createElement('li');
+		var text = document.createTextNode("> " + t);
+		li.appendChild(text);
+
+		var ol = document.getElementById('responses');
+		ol.insertBefore(li, ol.firstChild);
+
+		return false;
+	}
+
+	f.addEventListener('keypress', function (ev) {
+		var b = (ev.keyCode == 13  && ( ev.ctrlKey || ev.metaKey));
+		if ( b ) {
+			exec(ev);
+			ev.preventDefault();
+		}
+	}, false);
+}
+</script>
+<textarea id="inspect_viewtree" style="display: none;
+height:600px;
+width:600px;">
+
+//
+// http://coderepos.org/share/browser/lang/javascript/clone/trunk/uneval.js
+// slightly modified.
+//
+/*
+ * $Id: uneval.js,v 0.2 2008/06/13 17:47:18 dankogai Exp dankogai $
+ */
+
+function uneval(o, np){
+    var protos = [];
+    var char2esc = {'\t':'t','\n':'n','\v':'v','\f':'f','\r':'\r',    
+                    '\'':'\'','\"':'\"','\\':'\\'};
+    var escapeChar = function(c){
+        if (c in char2esc) return '\\' + char2esc[c];
+        var ord = c.charCodeAt(0);
+        return ord < 0x20   ? '\\x0' + ord.toString(16)
+            :  ord < 0x7F   ? '\\'   + c
+            :  ord < 0x100  ? '\\x'  + ord.toString(16)
+            :  ord < 0x1000 ? '\\u0' + ord.toString(16)
+                            : '\\u'  + ord.toString(16)
+    };
+    var uneval_asis = function(o){ return o.toString() };
+    /* predefine objects where typeof(o) != 'object' */
+    var name2uneval = {
+	'boolean':uneval_asis,
+	'number': uneval_asis,
+	'string': function(o){
+	    return '\''
+	       + o.toString().replace(/[\x00-\x1F\'\"\\\u007F-\uFFFF]/g, escapeChar)
+	       + '\''
+	},
+	'undefined': function(o){ return 'undefined' },
+	'function':uneval_asis
+    };
+
+    var uneval_default = function(o, np){
+	var src = []; // a-ha!
+	for (var p in o){
+	    if (!o.hasOwnProperty(p)) continue;
+	    src[src.length] = uneval(p)  + ':' + uneval(o[p], 1);
+	}
+        // parens needed to make eval() happy
+	return np ? '{' + src.toString() + '}' : '({' + src.toString() + '})';
+    };
+
+    uneval_set = function(proto, name, func){
+	protos[protos.length] = [ proto, name ];
+	name2uneval[name] = func || uneval_default;
+    };
+
+    uneval_set(Array, 'array', function(o){
+	var src = [];
+	for (var i = 0, l = o.length; i < l; i++)
+	    src[i] = uneval(o[i]);
+	return '[' + src.toString() + ']';
+    });
+    uneval_set(RegExp, 'regexp', uneval_asis);
+    uneval_set(Date, 'date', function(o){
+	return '(new Date(' + o.valueOf() + '))';
+    });
+    
+    var typeName = function(o){
+	// if (o === null) return 'null';
+	var t = typeof o;
+	if (t != 'object') return t;
+	// we have to lenear-search. sigh.
+	for (var i = 0, l = protos.length; i < l; i++){
+	    if (o instanceof  protos[i][0]) return protos[i][1];
+	}
+	return 'object';
+    };
+
+	// if (o.toSource) return o.toSource();
+	if (o === null) return 'null';
+	var func = name2uneval[typeName(o)] || uneval_default;
+	return func(o, np);
+    }
+
+
+function subviews_walk(parent_view) {
+	var i = 0;
+	var v;
+	for (  i = 0; v = parent_view.object.subviews[i]; i++ ) {
+		var o = geom(v);
+		subviews_walk(o);
+		parent_view.subviews.push(o);
+	}
+	return i
+}
+function geom (w) {
+	var o = w.frame.origin;
+	var s = w.frame.size;
+
+	var name = w + "";
+	var d = {
+			name: name,
+			object: w,
+			subviews: [],
+			top: o.y,
+			left: o.x,
+			width: s.width,
+			height: s.height,
+			alpha: s.alpha+'',
+			hidden: s.hidden + ""
+	};
+	// get view specific data.
+	if ( name.match(/\<UILabel\:/) ) {
+		d.text = w.text+"";
+		d.color = w.textColor+'';
+	} else if ( name.match(/\<UIImageView\:/) ) {
+		d.image = w.image+''
+	} else if ( name.match(/\<UINavigationButton\:/) ) {
+		d.text = w.title+''
+	}
+
+	return d;
+}
+
+var w = UIApplication.sharedApplication.keyWindow;
+var root = geom(w);
+subviews_walk(root);
+uneval(root).replace(/,'object':\[.+?\]/g, "" )
+</textarea>
+</body>
+</html>
